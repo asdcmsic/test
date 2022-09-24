@@ -1,0 +1,2 @@
+Welcome to the DevOps Demo class
+Please respond with attendee name
