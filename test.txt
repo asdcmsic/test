@@ -1,6 +1,6 @@
 Welcome to the DevOps Demo class
 Please respond with attendee name
 
-kashif is added to this depository 
+kashif is added to this repository 
 
-
+Raveem added to this repository 
