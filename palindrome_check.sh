@@ -18,7 +18,7 @@ palindrome_check () {
 while true;do
 	read -p "Enter the number to check is it palindrome or not: " num
 	x=${num:-121}
-	palindrome_check $num
+	palindrome_check $x
 	read -p "Do you want to continue[y/n]" replay
 	if [ $replay == 'Y' -o $replay == 'y' ];then
 		continue
