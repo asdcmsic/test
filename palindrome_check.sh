@@ -16,13 +16,19 @@ palindrome_check () {
 	fi
 }
 while true;do
-	read -p "Enter the number to check is it palindrome or not: " num
-	x=${num:-121}
-	palindrome_check $x
-	read -p "Do you want to continue[y/n]" replay
-	if [ $replay == 'Y' -o $replay == 'y' ];then
-		continue
+	if [ -z "$1" ];then 
+		read -p "Enter the number to check is it palindrome or not: " num
+		x=${num:-121}
+		palindrome_check $x
+		read -p "Do you want to continue[y/n]" replay
+		if [ $replay == 'Y' -o $replay == 'y' ];then
+			continue
+		else
+			break
+		fi
 	else
+		palindrome_check $1
 		break
 	fi
+	
 done
